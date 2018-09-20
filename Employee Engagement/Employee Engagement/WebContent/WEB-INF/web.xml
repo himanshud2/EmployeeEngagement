@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Employee Engagement</display-name>
+  <welcome-file-list>
+    <welcome-file>lg.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.info.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>createservlet</display-name>
+    <servlet-name>createservlet</servlet-name>
+    <servlet-class>com.info.servlet.createservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createservlet</servlet-name>
+    <url-pattern>/createservlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>deleteservlet</display-name>
+    <servlet-name>deleteservlet</servlet-name>
+    <servlet-class>com.info.servlet.deleteservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteservlet</servlet-name>
+    <url-pattern>/deleteservlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>addeventservlet</display-name>
+    <servlet-name>addeventservlet</servlet-name>
+    <servlet-class>com.info.servlet.addeventservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addeventservlet</servlet-name>
+    <url-pattern>/addeventservlet</url-pattern>
+  </servlet-mapping>
+</web-app>
